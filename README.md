@@ -1,6 +1,6 @@
 # Player Select UI
 
-desc
+インスタンス内Player選択ボタンを表示する簡易的なUI
 
 ## Install
 
@@ -16,7 +16,16 @@ https://github.com/Narazaka/PlayerSelectUI/releases/latest から `net.narazaka.
 
 ## Usage
 
-TODO
+1. `Udon/PlayerSelectReceiver` を参考にカスタムスクリプトを実装する
+  - ```
+    public abstract class PlayerSelectReceiver : UdonSharpBehaviour
+    {
+        [NonSerialized]
+        public VRCPlayerApi _selectedPlayer;
+        public abstract void _OnSelectPlayer();
+    }
+    ```
+2. `PlayerSelectUI` プレハブをシーンに配置し、 `PlayerSelectUI/Canvas/Panel/PlayerSelectButton` の `PlayerSelectButton` コンポーネントにある `Receiver` に設定する。
 
 ## License
 
