@@ -1,6 +1,6 @@
 {
   "name": "net.narazaka.vrchat.player-select-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "Player Select UI",
   "description": "インスタンス内Player選択ボタンを表示する簡易的なUI",
   "author": {

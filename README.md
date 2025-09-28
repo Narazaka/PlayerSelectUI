@@ -29,6 +29,7 @@ https://github.com/Narazaka/PlayerSelectUI/releases/latest から `net.narazaka.
 
 ## Changelog
 
+- v1.0.2: スクロールするように
 - v1.0.1: UI改善
 - v1.0.0: リリース
 
