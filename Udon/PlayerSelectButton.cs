@@ -16,12 +16,13 @@ namespace Narazaka.VRChat.PlayerSelectUI
         {
             if (Networking.IsOwner(player, gameObject))
             {
-                SetText(player.displayName);
+                SetTextAndActivate(player.displayName);
             }
         }
 
-        void SetText(string name)
+        void SetTextAndActivate(string name)
         {
+            GetComponent<Button>().interactable = true;
             var child = transform.GetChild(0);
             var tmp = child.GetComponent<TextMeshProUGUI>();
             if (tmp != null)
