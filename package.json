@@ -1,6 +1,6 @@
 {
   "name": "net.narazaka.vrchat.player-select-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Player Select UI",
   "description": "インスタンス内Player選択ボタンを表示する簡易的なUI",
   "author": {
@@ -10,6 +10,8 @@
   "license": "Zlib",
   "type": "tool",
   "url" : "https://github.com/Narazaka/PlayerSelectUI.git",
+  "documentationUrl": "https://github.com/Narazaka/PlayerSelectUI#player-select-ui",
+  "changelogUrl": "https://github.com/Narazaka/PlayerSelectUI#changelog",
   "unity": "2022.3",
   "vpmDependencies": {
     "com.vrchat.worlds": ">=3.7.5"

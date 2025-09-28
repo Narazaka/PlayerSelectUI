@@ -27,6 +27,11 @@ https://github.com/Narazaka/PlayerSelectUI/releases/latest から `net.narazaka.
     ```
 2. `PlayerSelectUI` プレハブをシーンに配置し、 `PlayerSelectUI/Canvas/Panel/PlayerSelectButton` の `PlayerSelectButton` コンポーネントにある `Receiver` に設定する。
 
+## Changelog
+
+- v1.0.1: UI改善
+- v1.0.0: リリース
+
 ## License
 
 [Zlib License](LICENSE.txt)
