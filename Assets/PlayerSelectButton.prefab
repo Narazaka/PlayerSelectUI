@@ -158,7 +158,10 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 7118075395675133168}
-  receiver: {fileID: 0}
+  manager: {fileID: 0}
+  image: {fileID: 3838498918670531691}
+  selectedColor: {r: 0, g: 1, b: 0, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &7118075395675133168
 MonoBehaviour:
   m_ObjectHideFlags: 0

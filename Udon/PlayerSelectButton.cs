@@ -10,7 +10,10 @@ namespace Narazaka.VRChat.PlayerSelectUI
     [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class PlayerSelectButton : UdonSharpBehaviour
     {
-        [SerializeField] UdonBehaviour receiver;
+        [SerializeField] PlayerSelectManager manager;
+        [SerializeField] Image image;
+        [SerializeField] Color selectedColor = Color.green;
+        [SerializeField] Color baseColor = Color.white;
 
         public override void OnPlayerJoined(VRCPlayerApi player)
         {
@@ -40,8 +43,12 @@ namespace Narazaka.VRChat.PlayerSelectUI
 
         public void _OnClick()
         {
-            receiver.SetProgramVariable(nameof(PlayerSelectReceiver._selectedPlayer), (object)Networking.GetOwner(gameObject));
-            receiver.SendCustomEvent(nameof(PlayerSelectReceiver._OnSelectPlayer));
+            manager._OnPlayerSelectByButton(Networking.GetOwner(gameObject));
+        }
+
+        public void _SetSelected(bool selected)
+        {
+            image.color = selected ? selectedColor : baseColor;
         }
     }
 }

@@ -23,9 +23,13 @@ https://github.com/Narazaka/PlayerSelectUI/releases/latest から `net.narazaka.
         [NonSerialized]
         public VRCPlayerApi _selectedPlayer;
         public abstract void _OnSelectPlayer();
+        [NonSerialized]
+        public IUdonEventReceiver _selectChangeReceiver;
+        public abstract void _AddSelectChangeListener();
+        // receiver emits _OnSelectedPlayerChanged after _selectedPlayer is changed.
     }
     ```
-2. `PlayerSelectUI` プレハブをシーンに配置し、 `PlayerSelectUI/Canvas/Panel/Scroll View/Viewport/Content/PlayerSelectButton` の `PlayerSelectButton` コンポーネントにある `Receiver` に設定する。
+2. `PlayerSelectUI` プレハブをシーンに配置し、 `PlayerSelectUI` の `Player Select Manager` コンポーネントにある `Receiver` に設定する。
 
 ## Changelog
 
